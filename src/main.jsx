@@ -1,20 +1,13 @@
 import React from "react";
-import ReactDom from "react-dom/client";
+import ReactDOM from "react-dom/client";
+import { HashRouter } from "react-router-dom";
 import App from "./App";
-import {BrowserRouter} from "react-router-dom";
-import "./index.css";
 
-ReactDom.createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
-  
-  <App/>
-  </BrowserRouter>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <HashRouter basename="/my-library">
+    <App />
+  </HashRouter>
 );
-
-
-
-
-
 
 
 

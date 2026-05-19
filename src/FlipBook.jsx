@@ -1,7 +1,11 @@
 // src/FlipBook.jsx
 import React, { useEffect, useState, useRef } from "react";
 import HTMLFlipBook from "react-pageflip";
-import * as pdfjsLib from "pdfjs-dist/webpack";
+
+import * as pdfjsLib from "pdfjs-dist";
+import pdfjsWorker from "pdfjs-dist/build/pdf.worker?url";
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = pdfjsWorker;
 
 const FlipBook = ({ pdfUrl }) => {
   const [pages, setPages] = useState([]);
