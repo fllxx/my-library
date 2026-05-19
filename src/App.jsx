@@ -8,15 +8,15 @@ function Home() {
       <h2>Select a Book</h2>
 
       <nav>
-        <a href={`${import.meta.env.BASE_URL}book/math`}>
-          Math Book
-        </a>
+        <Link to="/book/math">
+  Math Book
+</Link>
 
-        <br />
+<br />
 
-        <a href={`${import.meta.env.BASE_URL}book/sample`}>
-          Sample Book
-        </a>
+<Link to="/book/sample">
+  Sample Book
+</Link>
       </nav>
     </div>
   );
