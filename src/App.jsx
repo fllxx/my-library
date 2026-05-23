@@ -43,7 +43,7 @@ function App() {
           path="/book/sample"
           element={
             <FlipBook
-              pdfUrl={import.meta.env.BASE_URL + "sample.pdf"}
+              pdfUrl={import.meta.env.BASE_URL + "books/sample.pdf"}
             />
           }
         />
